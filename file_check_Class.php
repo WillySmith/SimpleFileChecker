@@ -2,6 +2,18 @@
 
 header('Content-Type: text/plain; charset=utf-8');
 
+
+
+
+//but if we try this simple function
+$file="simple_document.docx";
+
+	$info = new SplFileInfo($file);
+
+echo $info->getExtension();
+
+//Hope this will help
+
 try {
    
     // Undefined | Multiple Files | $_FILES Corruption Attack
